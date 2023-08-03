@@ -14,8 +14,8 @@ const PurpleTheme: ThemeTypes = {
         success: '#13DEB9',
         accent: '#FFAB91',
         warning: '#FFAE1F',
-        error: '#FA896B',
-        muted:'#5a6a85',
+        error: '#EF5350',
+        muted: '#5A6A85',
         lightprimary: '#ECF2FF',
         lightsecondary: '#E8F7FF',
         lightsuccess: '#E6FFFA',
@@ -33,4 +33,4 @@ const PurpleTheme: ThemeTypes = {
         grey200: '#EAEFF4'
     }
 };
-export { PurpleTheme};
+export { PurpleTheme };
