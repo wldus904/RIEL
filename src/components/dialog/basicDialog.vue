@@ -37,8 +37,8 @@ defineExpose({
                 <slot name="contents"></slot>
             </v-card-text>
             <v-card-actions class="d-flex justify-end">
-                <v-btn v-if="props.isShowClose" @click="closeDialog" color="#616161">{{ props.closeName ?? '취소' }}</v-btn>
-                <v-btn v-if="props.isShowConfirm" @click="confirmDialog" color="#1e88e5">{{ props.confirmName ?? '확인' }}</v-btn>
+                <v-btn v-if="props.isShowClose" @click="closeDialog" color="muted">{{ props.closeName ?? '취소' }}</v-btn>
+                <v-btn v-if="props.isShowConfirm" @click="confirmDialog" color="primary">{{ props.confirmName ?? '확인' }}</v-btn>
             </v-card-actions>
         </v-card>
     </v-dialog>
