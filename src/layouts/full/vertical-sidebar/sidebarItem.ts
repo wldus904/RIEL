@@ -1,7 +1,12 @@
 import {
     ApertureIcon,
     CopyIcon,
-    LayoutDashboardIcon, LoginIcon, MoodHappyIcon, TypographyIcon, UserPlusIcon
+    LayoutDashboardIcon,
+    LoginIcon,
+    MoodHappyIcon,
+    TypographyIcon,
+    UserPlusIcon,
+    CashIcon
 } from 'vue-tabler-icons';
 
 export interface menu {
@@ -20,45 +25,69 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-    { header: 'Home' },
+    { header: '주문' },
     {
-        title: 'Dashboard',
+        title: '매수/매도',
+        icon: CashIcon,
+        to: '/order/buy-selling'
+    },
+    { header: '분석' },
+    {
+        title: '주가 분석',
         icon: LayoutDashboardIcon,
-        to: '/'
-    },
-    { header: 'utilities' },
-    {
-        title: 'Typography',
-        icon: TypographyIcon,
-        to: '/ui/typography'
+        to: '/analysis/Stock'
     },
     {
-        title: 'Shadow',
-        icon: CopyIcon,
-        to: '/ui/shadow'
+        title: '주문 분석',
+        icon: LayoutDashboardIcon,
+        to: '/analysis/order'
     },
-    { header: 'auth' },
+    { header: '셋팅' },
     {
-        title: 'Login',
-        icon: LoginIcon,
-        to: '/auth/login'
-    },
-    {
-        title: 'Register',
-        icon: UserPlusIcon,
-        to: '/auth/register'
-    },
-    { header: 'Extra' },
-    {
-        title: 'Icons',
-        icon: MoodHappyIcon,
-        to: '/icons'
-    },
-    {
-        title: 'Sample Page',
-        icon: ApertureIcon,
-        to: '/sample-page'
-    },
+        title: '수수료',
+        icon: LayoutDashboardIcon,
+        to: '/setting/fee'
+    }
+    // example page
+    // { header: 'Home' },
+    // {
+    //     title: 'Dashboard',
+    //     icon: LayoutDashboardIcon,
+    //     to: '/'
+    // },
+    // { header: 'utilities' },
+    // {
+    //     title: 'Typography',
+    //     icon: TypographyIcon,
+    //     to: '/ui/typography'
+    // },
+    // {
+    //     title: 'Shadow',
+    //     icon: CopyIcon,
+    //     to: '/ui/shadow'
+    // },
+    // { header: 'auth' },
+    // {
+    //     title: 'Login',
+    //     icon: LoginIcon,
+    //     to: '/auth/login'
+    // },
+    // {
+    //     title: 'Register',
+    //     icon: UserPlusIcon,
+    //     to: '/auth/register'
+    // },
+    // { header: 'Extra' },
+    // {
+    //     title: 'Icons',
+    //     icon: MoodHappyIcon,
+    //     to: '/icons'
+    // }
+    // {
+    //     title: 'Sample Page',
+    //     icon: ApertureIcon,
+    //     to: '/sample-page'
+    // }
 ];
 
 export default sidebarItem;
